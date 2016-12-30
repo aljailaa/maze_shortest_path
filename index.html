@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Ameen Al-Gailani</title>
+      <link href="index.css" media="all" rel="stylesheet" /> 
+      <script src="index.js"></script>
+    </head>
+
+    <body>
+
+        </div>
+            <div>
+                Here is how this works:
+                <ul>
+                    <li> Select two points. Red is the starting point and green is the end point </li>
+                    <li> The shortest Path will be automatically drown between them. It might take sometime</li>
+                    <li> Keep highlighting. The previous path will disappear </li>
+                    <li>
+                        <span style="background-color: red;" height="33%" width="33%">Start</span>___
+                        <span style="background-color: green;" height="33%" width="33%">Destination</span>___
+                        <span style="background-color: yellow" height="33%" width="33%">Path</span>
+                    </li>
+                </ul>
+            </div>
+    	<!-- Navigation -->
+        <div style="text-align:center">
+            <h1 style="text-align:center;"> MAZE  </h1> 
+
+            <select id="options" onclick="button()">
+              <option value="10x10">10x10</option>
+              <option value="20x20">20x20</option>
+              <option value="30x30">30x30</option>
+              <option value="40x40">40x40</option>
+              <option value="50x50" selected="selected">50x50</option>
+              <option value="60x60">60x60</option>
+              <option value="70x70">70x70</option>
+              <option value="80x80">80x80</option>
+              <option value="90x90">90x90</option>
+              <option value="100x100">100x100</option>
+            </select>
+
+            <button type="button"  onclick="button()">Change</button> <h3>|<span id="path"></span>|</h3>
+    
+            <table id="table"  height="600px" width="100%"> 
+            </table>
+        </div>
+    </body>
+
+</html>

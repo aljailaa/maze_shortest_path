@@ -1,0 +1,8 @@
+td:hover {
+	background: blue;
+}
+
+table {
+	border-spacing: 0px;
+	border: 1px solid black;
+}
